@@ -1,0 +1,931 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main website body */
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #F8F5EC;
+    color: #34382F;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Main headings */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #263A2B;
+}
+
+/* Main heading sizes */
+
+h1 {
+    font-size: 500px;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+}
+
+/* Lists */
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+/* Common section container */
+
+.section-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+/* Small decorative section heading */
+
+.section-label {
+    color: #A67C35;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* 2. HEADER AND NAVIGATION */
+
+.site-header {
+    background-color: #263A2B;
+    color: #FFFFFF;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1300px;
+    min-height: 90px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+/* Restaurant name */
+
+.logo a {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 10000;
+    color: #E5C47B;
+}
+
+/* Navigation list */
+
+.main-navigation ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 0;
+}
+
+/* Navigation links */
+
+.main-navigation a {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main-navigation a:hover {
+    color: #E5C47B;
+}
+
+/* Header booking button */
+
+.header-booking a {
+    background-color: #D9B66F;
+    color: #263A2B;
+    padding: 12px 22px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header-booking a:hover {
+    background-color: #FFFFFF;
+    color: #263A2B;
+}
+
+
+/* 3. HERO / WELCOME SECTION */
+
+.hero-section {
+    background-color: #EDE7D9;
+    min-height: 570px;
+    padding: 70px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Welcome text */
+
+.hero-content {
+    flex: 1;
+    max-width: 580px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 25px;
+    color: #263A2B;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #665C4D;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+/* Hero image */
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Hero buttons */
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Primary button */
+
+.primary-button {
+    display: inline-block;
+    background-color: #263A2B;
+    color: #FFFFFF;
+    padding: 14px 25px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.primary-button:hover {
+    background-color: #A67C35;
+}
+
+/* Secondary button */
+
+.secondary-button {
+    display: inline-block;
+    border: 1px solid #263A2B;
+    color: #263A2B;
+    padding: 13px 25px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.secondary-button:hover {
+    background-color: #263A2B;
+    color: #FFFFFF;
+}
+
+/*4. ABOUT US SECTION */
+
+.about-section {
+    background-color: #F8F5EC;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.about-content > p {
+    font-size: 17px;
+    color: #665C4D;
+}
+
+/* Highlighted text */
+
+.about-content mark {
+    background-color: #E5C47B;
+    color: #263A2B;
+    padding: 2px 5px;
+}
+
+/* Promise and chef details */
+
+.about-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.about-details h3 {
+    color: #A67C35;
+}
+
+/* Chef's quotation */
+
+.about-content blockquote {
+    margin-top: 35px;
+    padding: 25px 30px;
+    border-left: 4px solid #D9B66F;
+    background-color: #EDE7D9;
+    border-radius: 4px;
+}
+
+.about-content blockquote p {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    font-style: italic;
+}
+
+.about-content blockquote footer {
+    color: #A67C35;
+    font-weight: 700;
+}
+
+
+/* 5. TODAY'S SPECIALS SECTION */
+
+.daily-specials-section {
+    background-color: #263A2B;
+    color: #FFFFFF;
+}
+
+.daily-specials-section .section-container {
+    text-align: center;
+}
+
+.daily-specials-section h2 {
+    color: #E5C47B;
+}
+
+.daily-specials-section .section-label {
+    color: #E5C47B;
+}
+
+.section-heading {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.daily-specials-section .section-heading > p:last-child {
+    color: #E8E5D9;
+}
+
+/* Specials list */
+
+.specials-list {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+
+.specials-list ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.specials-list li {
+    background-color: #354C39;
+    padding: 20px;
+    border-left: 6px solid #D9B66F;
+    border-radius: 4px;
+}
+
+
+/* 6. OUR MENU SECTION */
+
+.menu-section {
+    background-color: #F8F5EC;
+}
+
+.menu-section .section-heading {
+    margin-bottom: 55px;
+}
+
+.menu-category {
+    margin-bottom: 65px;
+}
+
+.menu-category h3 {
+    color: #263A2B;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #D9B66F;
+    padding-bottom: 12px;
+}
+
+/* Menu image gallery */
+
+.menu-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.menu-item figure,
+.menu-category figure {
+    background-color: #EDE7D9;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.menu-category figure img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Image captions */
+
+.menu-category figcaption {
+    padding: 15px;
+    color: #665C4D;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Menu food lists */
+
+.menu-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding-left: 25px;
+}
+
+.menu-list li {
+    padding: 8px;
+    color: #665C4D;
+}
+
+/* How to order */
+
+.ordering-section {
+    background-color: #EDE7D9;
+    padding: 35px;
+    margin-bottom: 50px;
+    border-radius: 6px;
+}
+
+.ordering-section h3 {
+    color: #263A2B;
+}
+
+.ordering-section ol li {
+    padding: 5px 0;
+}
+
+/* Menu glossary */
+
+.menu-glossary {
+    margin-bottom: 55px;
+}
+
+.menu-glossary blockquote {
+    background-color: #EDE7D9;
+    border-left: 3px solid #D9B66F;
+    padding: 15px 20px;
+    margin: 10px 0 20px;
+}
+
+/* Menu price list */
+
+.price-section {
+    margin-top: 50px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Price table */
+
+.price-section table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+
+.price-section th {
+    background-color: #263A2B;
+    color: #FFFFFF;
+    padding: 17px;
+}
+
+.price-section td {
+    padding: 15px;
+    border: 1px solid #DED8CA;
+}
+
+.price-section tr:nth-child(even) {
+    background-color: #EDE7D9;
+}
+
+.price-note {
+    margin-top: 20px;
+    color: #665C4D;
+    font-size: 14px;
+}
+
+
+/* =7. WEEKLY SPECIALS SECTION */
+
+.weekly-specials-section {
+    background-color: #D9C59B;
+    text-align: center;
+    padding: 65px 5%;
+}
+
+.weekly-specials-section h2 {
+    color: #263A2B;
+}
+
+.weekly-specials-section h3 {
+    color: #76512B;
+}
+
+.weekly-specials-section p {
+    color: #443C30;
+}
+
+.weekly-specials-section strong {
+    color: #263A2B;
+    font-size: 19px;
+}
+
+.weekly-specials-section a {
+    color: #263A2B;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.weekly-specials-section a:hover {
+    color: #FFFFFF;
+}
+
+/* 8. OPENING HOURS AND LOCATION */
+
+.location-section {
+    background-color: #F8F5EC;
+}
+
+.location-section h2 {
+    text-align: center;
+}
+
+.location-section .section-label {
+    text-align: center;
+}
+
+/* Hours and contact layout */
+
+.opening-hours,
+.contact-information {
+    background-color: #EDE7D9;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+}
+
+.opening-hours h3,
+.contact-information h3 {
+    color: #A67C35;
+}
+
+.opening-hours ul {
+    padding-left: 22px;
+}
+
+.opening-hours li {
+    padding: 5px 0;
+}
+
+/* Restaurant contact details */
+
+.contact-information address {
+    font-style: normal;
+}
+
+.contact-information a {
+    color: #263A2B;
+    font-weight: 700;
+}
+
+.contact-information a:hover {
+    color: #A67C35;
+}
+
+
+/* 9. CUSTOMER REVIEWS AND RESERVATIONS */
+
+.reservation-section {
+    background-color: #EDE7D9;
+}
+
+.reservation-section h2,
+.reservation-section > .section-container > h3 {
+    text-align: center;
+}
+
+.reservation-section .section-label {
+    text-align: center;
+}
+
+/* Reservation form */
+
+.reservation-form {
+    max-width: 850px;
+    margin: 35px auto 0;
+    background-color: #FFFFFF;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+/* Form groups */
+
+.reservation-form fieldset {
+    border: 1px solid #D9C59B;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.reservation-form legend {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    font-weight: 700;
+    color: #263A2B;
+    padding: 0 10px;
+}
+
+/* Form labels */
+
+.reservation-form label {
+    display: inline-block;
+    color: #34382F;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+/* Text, email, phone, date and number inputs */
+
+.reservation-form input[type="text"],
+.reservation-form input[type="email"],
+.reservation-form input[type="tel"],
+.reservation-form input[type="date"],
+.reservation-form input[type="time"],
+.reservation-form input[type="number"],
+.reservation-form select,
+.reservation-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #D9D2C4;
+    border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    background-color: #F8F5EC;
+    color: #34382F;
+}
+
+/* Input focus */
+
+.reservation-form input:focus,
+.reservation-form select:focus,
+.reservation-form textarea:focus {
+    outline: none;
+    border-color: #A67C35;
+    box-shadow: 0 0 0 2px rgba(166, 124, 53, 0.15);
+}
+
+/* Radio and checkbox options */
+
+.form-options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.form-options input {
+    accent-color: #263A2B;
+}
+
+.form-options label {
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Text area */
+
+.reservation-form textarea {
+    resize: vertical;
+}
+
+/* Booking and clear buttons */
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+/* Book Now button */
+
+.form-buttons button[type="submit"] {
+    background-color: #263A2B;
+    color: #FFFFFF;
+}
+
+.form-buttons button[type="submit"]:hover {
+    background-color: #A67C35;
+}
+
+/* Clear button */
+
+.form-buttons button[type="reset"] {
+    background-color: #D9C59B;
+    color: #263A2B;
+}
+
+.form-buttons button[type="reset"]:hover {
+    background-color: #E5C47B;
+}
+
+
+/*10. FOOTER SECTION */
+
+.site-footer {
+    background-color: #263A2B;
+    color: #FFFFFF;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 0;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 40px;
+}
+
+/* Footer restaurant name */
+
+.footer-brand h2 {
+    color: #E5C47B;
+    font-size: 28px;
+}
+
+/* Footer headings */
+
+.site-footer h3 {
+    color: #E5C47B;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+}
+
+/* Footer links */
+
+.site-footer a {
+    color: #FFFFFF;
+}
+
+.site-footer a:hover {
+    color: #E5C47B;
+}
+
+/* Footer navigation */
+
+.footer-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-navigation li {
+    margin-bottom: 10px;
+}
+
+
+/* 11. RESPONSIVE DESIGN - TABLETS= */
+
+@media (max-width: 900px) {
+
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .main-navigation ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .about-details {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* ===================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo a {
+        font-size: 23px;
+    }
+
+    .main-navigation ul {
+        gap: 12px;
+    }
+
+    .main-navigation a {
+        font-size: 12px;
+    }
+
+    .hero-section {
+        padding: 50px 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-image img {
+        height: 280px;
+    }
+
+    .section-container {
+        padding: 55px 0;
+    }
+
+    .specials-list ul {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-list {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-category figure img {
+        height: 250px;
+    }
+
+    .reservation-form {
+        padding: 20px;
+    }
+
+    .reservation-form fieldset {
+        padding: 15px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-buttons button {
+        width: 100%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+}
